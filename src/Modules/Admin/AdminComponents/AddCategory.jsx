@@ -23,7 +23,7 @@ export default function AddCategory() {
     // Handle form submission here
     console.log(category);
     axios
-      .post(`${host}api/category/addCategory`, category)
+      .post(`${host}/api/category/addCategory`, category)
       .then((res) => {
         console.log("Category details", res.data);
         alert("Added successfully");
