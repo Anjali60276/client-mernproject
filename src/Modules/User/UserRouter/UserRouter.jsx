@@ -2,7 +2,6 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 
 import Home from "../UserComponents/Home";
-import Shop from "../UserComponents/Shop";
 import ProductCard from "../UserComponents/ProductCard";
 import Navbar from "../UserComponents/Navbar";
 import Footer from "../UserComponents/Footer";
@@ -20,7 +19,6 @@ const UserRouter = () => {
      <ContextProvider>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/shop" element={<Shop />} />
         <Route path="/product/:id" element={<ProductCard />} />
         <Route path="/navbar" element={<Navbar />} />
         <Route path="/footer" element={<Footer />} />
